@@ -141,7 +141,7 @@ predictor <- function(text){
       suggestions <- filter(fourgrams, word1 == seperated_words$word3, word2 == seperated_words$word4, word3 == seperated_words$word5)
       suggested_word_2 <- suggestions$word4[1]
     }
-    if(is.na(suggested_word_1)){
+    if(is.na(suggested_word_2)){
       suggestions <- filter(trigrams, word1 == seperated_words$word4, word2 == seperated_words$word5)
       suggested_word_2 <- suggestions$word3[1]
     }
